@@ -1,8 +1,6 @@
 package com.example.springgenerateautowiredintention.usages;
 
-import com.example.springgenerateautowiredintention.beans.Bean0;
 import com.example.springgenerateautowiredintention.beans.Bean2;
-import com.example.springgenerateautowiredintention.beans.Bean6;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -18,7 +16,8 @@ public class TestSetterInjectionByCompletion {
     // no unexpected scrolling down should occur
     public void display(){
         System.out.println("======= setter injection test:");
-
+        // not-existing repo creating test:
+        //entityRepo
 
     }
 

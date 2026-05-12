@@ -8,6 +8,9 @@ public record TestInjectionIntoRecord(Bean6 bean6) {
 
     public void display() {
         System.out.println(bean6);
+        // check quickfix:
+        //System.out.println(personAlice.);
+        // check completion:
 
     }
 
