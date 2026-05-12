@@ -14,17 +14,17 @@ public class TestQuickfixesForBeans {
     @Autowired
     private Bean1 bean1;
 
-    @Qualifier("third_bean4")
+    //@Qualifier("third_bean4")
     @Autowired
     private Bean4 bean4;
-    @Qualifier("third_bean4")
+    //@Qualifier("third_bean4")
     @Autowired
     private Bean4 bean41;
 
     public void display() {
 
-
-
+        System.out.println(bean4.getId());
+        System.out.println(bean41.getId());
 
 
     }

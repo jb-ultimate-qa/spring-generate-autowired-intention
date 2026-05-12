@@ -18,10 +18,10 @@ public class TestSetterInjectionByCompletion {
     // no unexpected scrolling down should occur
     public void display(){
         System.out.println("======= setter injection test:");
-        System.out.println(bean0);
 
 
     }
+
     private void someDummyMethodWithLongBody(){
         System.out.println();
         System.out.println();
@@ -85,18 +85,8 @@ public class TestSetterInjectionByCompletion {
         System.out.println();
 
     }
-    private Bean0 bean0;
-    private Bean6 bean6;
 
-    @Autowired
-    public void setBean0(Bean0 bean0) {
-        this.bean0 = bean0;
-    }
 
-    @Autowired
-    public void setBean6(Bean6 bean6) {
-        this.bean6 = bean6;
-    }
 
     @Qualifier("bean22")
     @Autowired

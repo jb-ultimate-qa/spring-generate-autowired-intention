@@ -1,4 +1,4 @@
-package com.example.springgenerateautowiredintention.components.pesons;
+package com.example.springgenerateautowiredintention.components.persons;
 
 /**
  * *
