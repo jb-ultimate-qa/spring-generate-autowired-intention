@@ -8,12 +8,7 @@ import lombok.Setter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-/**
- * *
- * <p>Created by irina on 11/9/2022.</p>
- * <p>Project: spring-generate-autowired-intention</p>
- * *
- */
+
 @Component
 //@RequiredArgsConstructor
 //@Accessors
@@ -27,7 +22,7 @@ public class TestInjectionToLombokComponent {
     private final Bean4 bean4;
 
     public void test(){
-
+        // try injection by completion here
         System.out.println(bean4.getId());
     }
 }

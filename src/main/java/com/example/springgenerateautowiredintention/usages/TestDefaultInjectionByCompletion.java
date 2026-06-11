@@ -5,8 +5,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TestDefaultInjectionByCompletion {
+    public TestDefaultInjectionByCompletion() {
+        // try beans injections by completion inside the method: the constructor injection should be used
+    }
 
-   private void someDummyMethodWithLongBody(){
+    private void someDummyMethodWithLongBody(){
        System.out.println();
        System.out.println();
        System.out.println();

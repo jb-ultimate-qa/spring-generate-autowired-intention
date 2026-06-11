@@ -55,7 +55,7 @@ public class TestQuickfixesForComponents {
 
    }
 
-    // try beans injections by generate... or completion or intention or postfix completion inside the method
+    // try beans injections by generate... or completion or intention inside the method
 
     public void display(){
        // try completion:
@@ -69,5 +69,7 @@ public class TestQuickfixesForComponents {
         System.out.println(mycompo.getId());
         System.out.println(foobar.getId());*/
 
+       // try not-existing repository creation:
+        // entityRepo
     }
 }

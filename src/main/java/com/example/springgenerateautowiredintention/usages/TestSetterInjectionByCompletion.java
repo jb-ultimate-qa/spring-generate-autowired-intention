@@ -1,8 +1,13 @@
 package com.example.springgenerateautowiredintention.usages;
 
 import com.example.springgenerateautowiredintention.beans.Bean2;
+import com.example.springgenerateautowiredintention.data.AnotherEntity;
+import com.example.springgenerateautowiredintention.data.MyEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.Repository;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,11 +21,13 @@ public class TestSetterInjectionByCompletion {
     // no unexpected scrolling down should occur
     public void display(){
         System.out.println("======= setter injection test:");
-        // not-existing repo creating test:
-        //entityRepo
-
+       
     }
 
+    public void entityRepoTest(){
+        // not-existing repo creating test:
+        //entityRepo
+    }
     private void someDummyMethodWithLongBody(){
         System.out.println();
         System.out.println();
@@ -85,11 +92,11 @@ public class TestSetterInjectionByCompletion {
 
     }
 
-
-
     @Qualifier("bean22")
     @Autowired
     public void setBean22(Bean2 bean22) {
         this.bean22 = bean22;
     }
+
+
 }

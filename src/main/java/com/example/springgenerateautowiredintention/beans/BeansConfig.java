@@ -44,6 +44,7 @@ public class BeansConfig {
 
     @Bean("bean4") @Qualifier("third_bean4")
     public Bean4 bean43() {
+
         return new Bean4("b43(third)");
     }
 
@@ -62,6 +63,7 @@ public class BeansConfig {
     public Bean6 bean6() {
         return new Bean6();
     }
+
     @Bean
     public Bean5 bean5() {
         Bean5 bean5 = new Bean5();

@@ -13,11 +13,12 @@ public class TestQuickfixesForBeans {
 
     @Autowired
     private Bean1 bean1;
-
+    // quickfix should inject qualifier here
     //@Qualifier("third_bean4")
     @Autowired
     private Bean4 bean4;
-    //@Qualifier("third_bean4")
+    // completion should suggest qualifier here inside annotation value:
+    @Qualifier("")
     @Autowired
     private Bean4 bean41;
 
