@@ -1,5 +1,6 @@
 package com.example.springgenerateautowiredintention.beans;
 
+import jakarta.inject.Named;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +27,7 @@ public class BeansConfig {
         return new Bean2("b22");
     }
 
-    @Primary
+   // @Primary
     @Bean
     public Bean3 bean31(){
         return new Bean3("b31");
@@ -37,23 +38,29 @@ public class BeansConfig {
         return new Bean3("b32");
     }
 
-    @Bean
+    @Bean("bean3Special")
     public Bean3 bean33() {
         return new Bean3("b33");
     }
 
-    @Bean("bean4") @Qualifier("third_bean4")
+    @Bean
+    @Named("bean3Named")
+    public Bean3 bean34() {
+        return new Bean3("b34");
+    }
+
+    @Bean @Qualifier("third_bean4")
     public Bean4 bean43() {
 
         return new Bean4("b43(third)");
     }
 
-    @Bean("bean4") @Qualifier("secondary_bean4")
+    @Bean @Qualifier("secondary_bean4")
     public Bean4 bean42() {
         return new Bean4("b42(sec)");
     }
 
-    @Bean("bean4") @Qualifier("primary_bean4") //@Primary
+    @Bean @Qualifier("primary_bean4") @Primary
     public Bean4 bean41() {
 
         return new Bean4("b41(prim)");

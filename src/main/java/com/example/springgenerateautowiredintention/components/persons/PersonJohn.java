@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component;
  * <p>Project: spring-generate-autowired-intention</p>
  * *
  */
-@Component
+@Component("john-person")
 public class PersonJohn implements Person {
 }

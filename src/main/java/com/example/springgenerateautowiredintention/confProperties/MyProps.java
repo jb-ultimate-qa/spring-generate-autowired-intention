@@ -3,13 +3,7 @@ package com.example.springgenerateautowiredintention.confProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * *
- * <p>Created by irina on 2/23/2024.</p>
- * <p>Project: spring-generate-autowired-intention</p>
- * *
- */
-@Component
+
 @ConfigurationProperties("my.props")
 public class MyProps {
 

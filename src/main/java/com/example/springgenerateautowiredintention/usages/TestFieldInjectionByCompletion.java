@@ -71,7 +71,10 @@ public class TestFieldInjectionByCompletion {
     public void display(){
         System.out.println(bean0.id());
        // try completion:
-        System.out.println();
+        // bean
+
+
 
     }
+
 }

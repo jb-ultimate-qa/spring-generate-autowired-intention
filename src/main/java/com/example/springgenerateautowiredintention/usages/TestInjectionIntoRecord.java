@@ -5,13 +5,13 @@ import org.springframework.stereotype.Component;
 
 @Component
 public record TestInjectionIntoRecord(Bean6 bean6) {
-
+    // test Generate | AutowireBean... - doesn't work now
     public void display() {
         System.out.println(bean6);
-        // check quickfix:
-        //System.out.println(personAlice.);
-        // check completion:
-
+        // check quickfix - doesn't work now:
+       // System.out.println(animal.);
+        // check completion - doesn't work now:
+        // bean
     }
 
 

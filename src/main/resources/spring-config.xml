@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:utils="http://www.springframework.org/schema/util"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!-- check Generate | Setter Dependency, Constructor dependency for beans: -->
+    <utils:list id="myXmlList" value-type="java.lang.String">
+        <value>v1</value>
+        <value>v2</value>
+        <value>v3</value>
+    </utils:list>
+    <bean id="xmlBean1" class="com.example.springgenerateautowiredintention.beans.XmlBean1">
+        <constructor-arg>
+            <bean id="xmlBean3" class="com.example.springgenerateautowiredintention.beans.XmlBean3"/>
+        </constructor-arg>
+    </bean>
+    <bean class="com.example.springgenerateautowiredintention.beans.XmlBean2">
+
+    </bean>
+    <mvc:view-controller path="/fooController" />
+</beans>

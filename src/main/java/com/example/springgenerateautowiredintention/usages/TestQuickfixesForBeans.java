@@ -13,7 +13,7 @@ public class TestQuickfixesForBeans {
 
     @Autowired
     private Bean1 bean1;
-    // quickfix should inject qualifier here
+    // quickfix for the error should inject qualifier here
     //@Qualifier("third_bean4")
     @Autowired
     private Bean4 bean4;
