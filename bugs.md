@@ -1,0 +1,6 @@
+- project controllers are not suggested, but the library ones, as long as xml controllers, are suggested
+- the beans from diff schemas are suggested, but can't be injected (exception)
+- strange representation of beans with names like "something-something-something" (more than 1 hyphen)
+- nothing work for records
+- @Named annotation is used only in case of Generate action, not for completion
+- quickfix doesn't allow to create new bean, if some somehow matching beans are found
